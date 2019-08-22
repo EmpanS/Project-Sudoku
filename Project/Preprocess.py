@@ -3,7 +3,6 @@ import cv2
 import numpy as np
 from PreprocessGrid import get_corner_points_of_largest_contour, crop_and_reshape
 from PreprocessNumber import PreprocessNumber
-import matplotlib.pyplot as plt
 
 
 def preprocess_sudoku_board(board_img, dimension):
