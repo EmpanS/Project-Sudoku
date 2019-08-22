@@ -1,0 +1,17 @@
+Here I can discuss what my lessons learned
+
+
+Learned a lot about documenting code
+
+
+Machine learning:
+  - Data processing
+      - Got to gather data and label data
+      - Got to build a data pipeline
+      - Key insights
+          - Importance of validating the data   (miss-classified images using my python script)
+          - 
+  - Convolutional Neural Networks
+      - Got to improve my skills
+      - Got to use Transfer learning
+      - Used a validation set to mitigate overfitting
