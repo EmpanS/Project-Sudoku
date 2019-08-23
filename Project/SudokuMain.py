@@ -44,7 +44,7 @@ def main():
     sudoku_board = np.zeros((9, 9), dtype=np.int8)
 
     # Import final model
-    model = load_model(os.path.dirname(os.path.realpath(__file__)) + "\Final_model")
+    model = load_model(os.path.dirname(os.path.realpath(__file__)) + "\Final model")
 
     for index, square in enumerate(processed_sudoku_img):
         if square[1]:
