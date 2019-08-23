@@ -268,10 +268,10 @@ class PreprocessNumber:
 
         non_black_dot_counter = 0
         # x_box and y_box represents the coordinates of the upper left corner of the middle square
-        x_box = int(self.extracted_feature.shape[0] / 9) * 3
-        y_box = int(self.extracted_feature.shape[1] / 9) * 3
-        for row in range(x_box, x_box + int(self.extracted_feature.shape[0] / 9)*3):
-            for col in range(y_box, y_box + int(self.extracted_feature.shape[1] / 9) * 3):
+        x_box = int(self.extracted_feature.shape[0] / 9) * 4
+        y_box = int(self.extracted_feature.shape[1] / 9) * 4
+        for row in range(x_box, x_box + int(self.extracted_feature.shape[0] / 9)*2):
+            for col in range(y_box, y_box + int(self.extracted_feature.shape[1] / 9) * 2):
                 if self.extracted_feature[row][col] > self.NOT_BLACK_THRESHOLD:
                     non_black_dot_counter += 1
                     if non_black_dot_counter >= 5:
