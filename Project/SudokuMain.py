@@ -58,3 +58,6 @@ def main():
 
     solved_sudoku = np.array(sudoku_solver.solve(sudoku_board)[0])
     sudoku_solver.print_board(solved_sudoku)
+
+if __name__ == "__main__":
+    main()
