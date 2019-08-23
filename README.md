@@ -31,6 +31,7 @@ I trained the final model on images of Sudokus printed on paper and when I tried
 
 Any comments, suggestions or feedback is heavily appreciated. Thanks and happy Sudoking!
 
+
 2019-08-23
 
 Emil Sandström
