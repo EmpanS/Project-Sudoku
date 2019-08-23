@@ -225,6 +225,8 @@ class PreprocessNumber:
             return self.__dct_groups[str(center_row) + ":" + str(center_col)]
         else:
             for loop_nr in range(1, nr_search_loops):
+                center_row -= 1
+                center_col -= 1
                 search_coord = [center_row, center_col]
                 for direction in loop_directions:
                     vertical = direction[0]
@@ -234,8 +236,6 @@ class PreprocessNumber:
                             return self.__dct_groups[str(search_coord[0]) + ":" + str(search_coord[1])]
                         search_coord[0] += 1 * vertical
                         search_coord[1] += 1 * horizontal
-                center_row -= 1
-                center_col -= 1
         # If no group was found, all pixels are black.
         return -1
 
