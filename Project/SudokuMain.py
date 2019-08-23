@@ -6,15 +6,17 @@ from SudokuSolver import SudokuSolver
 from Preprocess import *
 import tensorflow as tf
 import matplotlib.pyplot as plt
+import random
 tf.logging.set_verbosity(tf.logging.ERROR)
 MNIST_DIMENSION = (28, 28)
 
 
 def main():
-    """Sudoku solver
+    """Spreadsheet Column Printer
     This script allows the user to solve a Sudoku board by specifying the image-path as an argument (with quotation
     marks), the image needs to contain a Sudoku board. This script works best on image taken on real paper where the
-    Sudoku board takes up almost the whole picture.
+    Sudoku board takes up almost the whole picture. If no path is specified, a random image will be taken from the
+    folder Example images.
 
     This script requires that the following dependencies to be within the Python
     environment you are running this script in:
@@ -26,8 +28,14 @@ def main():
 
     This script can also be run in an IDE, but then the user has to manipulate and manually set the image path.
     """
+    if len(sys.argv) > 1:
+        image_path = str(sys.argv[1])
+    else:
+        print("No image specified. Taking a random image.")
+        base_path = os.getcwd() + "\Example images\\"
+        image_path = base_path + os.listdir(base_path)[random.randint(0,len(os.listdir(base_path))-1)]
 
-    image_path = str(sys.argv[1])
+
     input_sudoku_img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     plt.imshow(input_sudoku_img, cmap='gray')
     plt.show()
