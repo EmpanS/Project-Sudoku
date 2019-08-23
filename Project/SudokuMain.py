@@ -11,7 +11,7 @@ MNIST_DIMENSION = (28, 28)
 
 
 def main():
-    """Spreadsheet Column Printer
+    """Sudoku solver
     This script allows the user to solve a Sudoku board by specifying the image-path as an argument (with quotation
     marks), the image needs to contain a Sudoku board. This script works best on image taken on real paper where the
     Sudoku board takes up almost the whole picture.
