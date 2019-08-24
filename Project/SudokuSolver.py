@@ -88,19 +88,8 @@ class SudokuSolver:
         if insert_row < 9:
             for candidate_col in range(insert_col, 9):
                 if sudoku_board[insert_row][candidate_col] == -1:
-                    self.number_of_insertions += 1
-                    for candidate in range(1, 10):
-                        if self.__is_insertion_valid(sudoku_board, value=candidate,
-                                                     position=(insert_row, candidate_col)):
-                            # If the insertion is valid, insert the value and try to solve the remaining part of
-                            # the Sudoku.
-                            result = self.solve(copy.deepcopy(sudoku_board), insert_idx=(insert_row, candidate_col),
-                                                value=candidate)
-                            if result[1]:
-                                return result[0], True
-                        # If no insertion was possible, a solution has not been found.
-                        if candidate == 9:
-                            return sudoku_board, False
+                    # Try to insert a number
+                    return self.__insert_new_number(sudoku_board, insert_row, candidate_col)
             # If there are no remaining empty boxes, a solution has been found.
         else:
             print("Found a solution after {} number of insertions.\n".format(self.number_of_insertions), end='')
@@ -282,3 +271,17 @@ class SudokuSolver:
             if sudoku_board[insert_idx[0]][remaining_col] == -1:
                 return False
         return True
+
+    def __insert_new_number(self, sudoku_board, insert_row, candidate_col):
+        self.number_of_insertions += 1
+        for candidate in range(1, 10):
+            if self.__is_insertion_valid(sudoku_board, value=candidate,
+                                         position=(insert_row, candidate_col)):
+                # If the insertion is valid, insert the value and try to solve the remaining part of
+                # the Sudoku.
+                result = self.solve(copy.deepcopy(sudoku_board), insert_idx=(insert_row, candidate_col),
+                                    value=candidate)
+                if result[1]:
+                    return result[0], True
+        # If no insertion was possible, a solution has not been found.
+        return sudoku_board, False
