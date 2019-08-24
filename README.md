@@ -14,7 +14,7 @@ There are two ways to run the program, first you have to download the project. T
 2. Solve one of the sample boards found in \Project, by running SudokuMain.py without specifying an image path.
 
 ## Examples
-The folder \Example contains one Jupyter notebook, [Complete Example.ipynb](https://github.com/EmpanS/Project-Sudoku/blob/master/Example/Complete%20Example.ipynb).
+The folder \Example contains one Jupyter notebook, [Complete Example.ipynb](https://github.com/EmpanS/Project-Sudoku/blob/master/Example/Complete%20Example.ipynb). The notebook contains two similar examples on how the source code found in \Project can be used to solve Sudoku boards by using images of a Sudokus.
 
 ## Docs
 Two of them, shows how I trained two CNNs using the Keras API.
