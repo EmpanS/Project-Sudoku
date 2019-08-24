@@ -1,4 +1,7 @@
 # Project-Sudoku
+
+### Using computer vision to solve Sudoku puzzles automatically
+
 This was a hobby project where I built a python-program that takes an image of an unfinished Sudoku board as input and returns the solution in a numpy array.
 
 Using prebuilt functions from OpenCV (Open Computer Vision Library) and CNNs in the Keras API together with my own algorithms, an image of a Sudoku board transforms from just pixel values to a numpy array with integers, which then enables a solution to be found using a Brute Force-algorithm.
