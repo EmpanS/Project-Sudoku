@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import random
 tf.logging.set_verbosity(tf.logging.ERROR)
 MNIST_DIMENSION = (28, 28)
-
+EMPTY = -1
 
 def main():
     """Spreadsheet Column Printer
@@ -54,7 +54,7 @@ def main():
             prediction = model.predict(number)[0]
             sudoku_board[int(index / 9)][index % 9] = int(np.argmax(prediction)) + 1
         else:
-            sudoku_board[int(index / 9)][index % 9] = -1
+            sudoku_board[int(index / 9)][index % 9] = EMPTY
 
     print("Interpreted the Sudoku to be:")
     sudoku_solver = SudokuSolver()
