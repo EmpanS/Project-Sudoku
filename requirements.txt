@@ -1,0 +1,13 @@
+To run this program you need to have the following dependencies installed:
+
+- numpy
+
+- keras
+
+- tensorflow
+
+- scikit-image
+
+- matplotlib
+
+- opencv-python
