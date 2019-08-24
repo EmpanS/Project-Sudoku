@@ -14,7 +14,10 @@ There are two ways to run the program, first you have to download the project. T
 2. Solve one of the sample boards found in \Project, by running SudokuMain.py without specifying an image path.
 
 ## Examples
-The folder \Example contains three jupyter notebooks. Two of them, shows how I trained two CNNs using the Keras API. The third one, called Complete Example.ipyn, contains an example on how to use the program without using the SudokuMain.py. The folder also contains some images used in the examples.
+The folder \Example contains one Jupyter notebook, [Complete Example.ipynb](https://github.com/EmpanS/Project-Sudoku/blob/master/Example/Complete%20Example.ipynb).
+
+## Docs
+Two of them, shows how I trained two CNNs using the Keras API.
 
 The folder \docs contains further examples with the purpose of explaining concepts, rather than explaining code. It contains a pdf visualizing how the data pipeline manipulates input images. There is also a jupyter notebook that visualizes how some algorithms (that I came up with) work. Do not put any effort in trying to understand the code in the notebook, but rather look at the source code where the algorithm is implemented together with the animation plots in the notebook. 
 
