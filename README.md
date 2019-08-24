@@ -2,16 +2,11 @@
 This was a hobby project where I built a python-program that takes an image of an unfinished Sudoku board as input and returns the solution in a numpy array.
 
 Using prebuilt functions from OpenCV (Open Computer Vision Library) and CNNs in the Keras API together with my own algorithms, an image of a Sudoku board transforms from just pixel values to a numpy array with integers, which then enables a solution to be found using a Brute Force-algorithm.
-## How to run the program
-To run this program you need to have the following dependencies installed:
-- numpy
-- keras
-- tensorflow
-- scikit-image
-- matplotlib
-- opencv-python
 
-To run the program, download all files from the \Project folder. Then take an image of a Sudoku board, save it on your computer. Then, run the SudokuMain.py from the command prompt and specify the image path of the parameter.
+## How to run the program
+There are two ways to run the program, first you have to download all files from the \Project folder. Then, you can:
+1. Solve your own Sudoku by taking an image of the Sudoku board, save it on your computer. Then, run the SudokuMain.py from the command prompt and specify the image path of the parameter.
+2. Solve one of the sample boards found in \Project, by running SudokuMain.py without specifying an image path.
 
 ## Examples
 The folder \Example contains three jupyter notebooks. Two of them, shows how I trained two CNNs using the Keras API. The third one, called Complete Example.ipyn, contains an example on how to use the program without using the SudokuMain.py. The folder also contains some images used in the examples.
