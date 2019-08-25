@@ -6,7 +6,7 @@ class PreprocessNumber:
     """
         A class used to process images from a Sudoku board.
 
-        The each box in the Sudoku board should be given an instance of this class. The class contains methods to
+        Each box in the Sudoku board should be given an instance of this class. The class contains methods to
         determine if one box contains a number or not. If the box contains a number this class provices methods to
         extract and center the number in a new image with the dimension specified by the user.
 
