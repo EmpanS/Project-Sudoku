@@ -11,7 +11,7 @@ Using prebuilt functions from OpenCV (Open Computer Vision Library) and Convolut
 ## How to run the program
 There are two ways to run the program, first you have to download the project. Then, you can:
 1. Solve your own Sudoku by taking an image of the Sudoku board, save it on your computer. Then, run the SudokuMain.py from the command prompt and specify the image path as an argument.
-2. Solve one of the sample boards found in \Project, by running SudokuMain.py without specifying an image path.
+2. Solve one of the [sample boards](https://github.com/EmpanS/Project-Sudoku/tree/master/Project/Sample%20images) found in \Project\Sample boards, by running SudokuMain.py without specifying an image path.
 
 ## Project
 The folder \Project contains all necessary files to run the project. All source code is located in this folder. You can either use [SudokuMain.py](https://github.com/EmpanS/Project-Sudoku/blob/master/Project/SudokuMain.py) to run the project as described above, or write your own script and import all modules as in the [Complete Example.ipynb](https://github.com/EmpanS/Project-Sudoku/blob/master/Example/Complete%20Example.ipynb).
