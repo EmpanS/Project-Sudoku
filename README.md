@@ -13,13 +13,19 @@ There are two ways to run the program, first you have to download the project. T
 1. Solve your own Sudoku by taking an image of the Sudoku board, save it on your computer. Then, run the SudokuMain.py from the command prompt and specify the image path as an argument.
 2. Solve one of the sample boards found in \Project, by running SudokuMain.py without specifying an image path.
 
+## Project
+The folder \Project contains all necessary files to run the project. All source code is located in this folder. You can either use [SudokuMain.py](https://github.com/EmpanS/Project-Sudoku/blob/master/Project/SudokuMain.py) to run the project as described above, or write your own script and import all modules as in the [Complete Example.ipynb](https://github.com/EmpanS/Project-Sudoku/blob/master/Example/Complete%20Example.ipynb).
+
 ## Examples
 The folder \Example contains one Jupyter notebook, [Complete Example.ipynb](https://github.com/EmpanS/Project-Sudoku/blob/master/Example/Complete%20Example.ipynb). The notebook contains two similar examples on how the source code found in \Project can be used to solve Sudoku boards by using images of a Sudokus.
 
 ## Docs
-Two of them, shows how I trained two CNNs using the Keras API.
+The folder \docs is divided into three parts:
+1. A folder [Train Models](https://github.com/EmpanS/Project-Sudoku/tree/master/docs/Train%20Models) which contains two jupyter notebooks that shows hows I trained the models (using the Keras API) as well as my own created training set, used to train the final model.
+2. Another folder [Visualize Algorithm - Feature Extraction](https://github.com/EmpanS/Project-Sudoku/tree/master/docs/Visualize%20Algorithm%20-%20Feature%20Extraction), which contains a jupyter notebook that visualizes how some algorithms (that I came up with) work, especially the algorithms that are used to extract numbers from images. Do not put any effort in trying to understand the code in the notebook, but rather look at the source code where the algorithm is implemented together with the animation plots in the notebook. 
+3. A simple pdf [Visualize Data Pipeline](https://github.com/EmpanS/Project-Sudoku/blob/master/docs/Visualize%20Data%20Pipeline.pdf), visualizing how the data pipeline manipulates input images. This pdf does not contain any code.
 
-The folder \docs contains further examples with the purpose of explaining concepts, rather than explaining code. It contains a pdf visualizing how the data pipeline manipulates input images. There is also a jupyter notebook that visualizes how some algorithms (that I came up with) work. Do not put any effort in trying to understand the code in the notebook, but rather look at the source code where the algorithm is implemented together with the animation plots in the notebook. 
+The second and third part have the purpose of explaining concepts, rather than explaining code.
 
 ## Further improvements
 These are my ideas for further improvements and possible extensions:
