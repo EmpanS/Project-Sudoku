@@ -25,7 +25,7 @@ The folder \docs is divided into three parts:
 2. Another folder [Visualize Algorithm - Feature Extraction](https://github.com/EmpanS/Project-Sudoku/tree/master/docs/Visualize%20Algorithm%20-%20Feature%20Extraction), which contains a jupyter notebook that visualizes how some algorithms (that I came up with) work, especially the algorithms that are used to extract numbers from images. Do not put any effort in trying to understand the code in the notebook, but rather look at the source code where the algorithm is implemented together with the animation plots in the notebook. 
 3. A simple pdf [Visualize Data Pipeline](https://github.com/EmpanS/Project-Sudoku/blob/master/docs/Visualize%20Data%20Pipeline.pdf), visualizing how the data pipeline manipulates input images. This pdf does not contain any code.
 
-The second and third part have the purpose of explaining concepts, rather than explaining code.
+The purpose of the second and third part is to explain concepts, rather than explaining code.
 
 ## Further improvements
 These are my ideas for further improvements and possible extensions:
